@@ -100,6 +100,7 @@ echo "conda activate meu_env" >> %USERPROFILE%\.condarc
 # Compartilhando ambientes
 
 Quando usar environment.yml?
+https://github.com/ML-Passionate/Anaconda-Config/blob/main/environment.yml
 
 Para compartilhar um ambiente entre equipes.
 Para garantir que um ambiente seja recriado com as mesmas versões de pacotes.
