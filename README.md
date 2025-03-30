@@ -12,7 +12,7 @@ conda search "^python$"
 
 # Configurações de um ambiente
 
-## 1) lista as configurações do ambiente ativo
+## 1) Lista as configurações do ambiente ativo
 
 conda info
 
@@ -46,6 +46,10 @@ conda install numpy pandas
 ## 8) como deletar um pacote do ambiente ativo
 
 conda remove numpy
+
+## 9) Como atualizar os pacotes do ambiente ativo
+
+conda update --all
 
 # Gerenciamento de ambientes
 
@@ -92,3 +96,24 @@ Agora, sempre que abrir o cmd, o ambiente será ativado automaticamente.
 conda config --set env_prompt "({name}) "
 conda config --set auto_activate_base False
 echo "conda activate meu_env" >> %USERPROFILE%\.condarc
+
+# Compartilhando ambientes
+
+Quando usar environment.yml?
+
+Para compartilhar um ambiente entre equipes.
+Para garantir que um ambiente seja recriado com as mesmas versões de pacotes.
+Para documentar as dependências de um projeto.
+
+## 1) Criando um ambiente a partir de um arquivo enviroment.yml
+
+conda env create -f environment.yml
+
+## 2) Exportando a configuranção de um ambiente para enviroment.yml
+
+conda env export > C:\Draft\environment.yml 
+
+## 3) Atualizar um arquivo enviroment.yml
+
+conda env update --file environment.yml --prune
+
