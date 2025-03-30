@@ -64,6 +64,7 @@ conda activate meu_env
 
 ## 3) Ativar um ambiente
 
+conda init
 conda activate meu_env
 
 ## 4) Remover um ambiente
